@@ -1,0 +1,684 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #071435;
+  --secondary-color: #1551E5;
+  --bg-color: #F2F6FF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif; /* Используем шрифт Montserrat, если он доступен, и затем запасной шрифт без засечек */
+}
+
+/*------------ HEADER -------------*/
+
+header {
+  max-width: 1680px; /* Максимальная ширина основного контейнера */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  padding: 0 24px; /* Паддинг по горизонтали 24 пикселя */
+}
+
+/* Медиа-запрос для больших разрешений */
+@media screen and (min-width: 1680px) {
+  header {
+    max-width: none; /* Отменяем максимальную ширину */
+  }
+}
+
+.header-section {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; /* Занимает всю ширину контейнера */
+  /* max-width: 1680px; Максимальная ширина шапки */ 
+}
+
+.header-container {
+  display: flex; /* Используем flexbox для выравнивания блоков */
+  flex-direction: column; /* Устанавливаем расположение блоков в столбец */
+  align-items: center;
+  flex: 1;
+}
+
+.header-block {
+  display: flex;
+  align-items: center;
+}
+
+.header-divider {
+  height: 1px; /* Толщина дивайдера 1 пиксель */
+  background-color: #e2e4f0; /* Цвет дивайдера */
+  margin: 0 auto; /* Центрируем дивайдер */
+  width: 100%; /* Ширина дивайдера по размеру блоков */
+}
+
+.header-top {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  gap: 24px;
+  width: 100%;
+}
+
+.header-top-menu-button {
+  height: 48px;
+  border-radius: 8px;
+  border-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 12px;
+  background-color: var(--secondary-color);
+}
+
+.header-top-menu-icon {
+  filter: invert(100%);
+}
+
+.header-top-menu-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+}
+
+.header-top-input-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  padding: 6px;
+  gap: 12px;
+}
+
+.header-top-input-container input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-right: 12px;
+}
+
+.input-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.input-icons img {
+  width: 24px; /* Устанавливаем ширину иконок */
+  height: 24px; /* Устанавливаем высоту иконок */
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cart-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 12px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  text-decoration: none;
+}
+
+.cart-icon {
+  color: var(--secondary-color);
+}
+
+.cart-total {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dropdown-arrow {
+  background-image: url("images/Mask.png"); /* Указываем путь к изображению */
+  width: 10px; /* Устанавливаем ширину изображения */
+  height: 6px; /* Устанавливаем высоту изображения */
+  display: inline-block; /* Устанавливаем тип отображения */
+}
+
+.header-bottom {
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navigation-menu {
+  margin: 0;
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+  gap: 24px;
+}
+
+.right-part {
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.nav-menu-your-manager {
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--bg-color);
+  gap: 8px;
+}
+
+.your-manager-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.nav-menu-event {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/*------------ MAIN -------------*/
+
+.main {
+  max-width: 1680px; /* Максимальная ширина основного контейнера */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  padding: 32px 24px; /* Вертикальный и горизонтальный паддинг */
+}
+
+.main-container {
+  display: flex; /* Используем flexbox для расположения блоков */
+  flex-direction: column; /* Располагаем блоки в столбец */
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; Занимает всю ширину контейнера */
+  /* max-width: 1680px; */
+}
+
+.container-upper-wrapper {
+  margin-bottom: 32px;
+  align-self: flex-start;
+}
+
+.breadcrumbs {
+  display: flex; /* Используем flexbox для расположения элементов */
+  align-items: center; /* Выравниваем элементы по центру */
+  margin-bottom: 24px; /* Отступ между блоками */
+  gap: 4px;
+}
+
+.breadcrumb-item,
+.breadcrumb-divider {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828ead;
+  padding: 0px; /* Горизонтальный паддинг для элементов */
+}
+
+.product-title {
+  text-transform: uppercase; /* Делаем все буквы заглавными */
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.product-info {
+  display: flex; /* Используем flexbox для расположения блоков */
+  margin-bottom: 32px; /* Отступ между блоками */
+}
+
+.product-description {
+  display: flex; /* Используем flexbox для расположения блоков */
+  gap: 48px;
+}
+
+.product-image {
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+
+.product-picture {
+  flex: 1; /* Растягиваем изображение товара на всю доступную ширину */
+}
+
+.other-products-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  padding: 8px 0;
+  height: 100%;
+}
+
+.icon-boots {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-details {
+  flex: 2; /* Занимаем две трети доступной ширины */
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-top: 24px;
+  padding-left: 0;
+}
+
+.product-details-upper {
+  display: flex;
+  gap: 48px;
+}
+.product-details-upper-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 372px;
+}
+
+.left-top-price {
+  margin-bottom: 32px;
+}
+
+.left-top-price-full {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: #FF3D71;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.left-top-price-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.left-top-price-total {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  color: var(--primary-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.left-top-package {
+  display: flex;
+  gap: 16px;
+}
+
+.left-top-package-quantity {
+  background-color: #F2F5F9;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.left-top-package-quantity-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #828EAD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.left-top-package-in-one {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.left-top-package-in-one-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--primary-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.product-details-upper-left-middle {
+  display: flex;
+  gap: 16px;
+}
+
+.left-middle-block {
+  flex: 1;
+}
+
+.left-middle-text-upper {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: var(--primary-color);
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.left-middle-text-down {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;  
+  color: #828EAD;
+}
+
+.product-details-upper-left-bottom {
+  display: flex;
+  gap: 16px;
+}
+
+.product-details-upper-right {
+  flex: 1;
+}
+
+.product-details-upper-left-icon {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  border-radius: 8px;
+  padding: 16px, 24px, 16px, 24px;
+  background-color: var(--bg-color);
+}
+
+.product-details-upper-left-cart  {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  border-radius: 8px;
+  padding: 16px, 24px, 16px, 24px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.icon-cart {
+  color: white;
+  margin-right: 12px;
+}
+
+.cart-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: white;
+}
+
+.product-details-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 16px; /* Дополнительный отступ снизу для разделения от следующего блока */
+  margin-top: 0;
+}
+
+.product-details-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.upper-right-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.upper-right-block {
+  display: flex;
+  gap: 32px;
+}
+
+.upper-right-block-item {
+  flex: 1;
+}
+
+.item-code {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.item-name {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0px;
+  color: #828ead;
+}
+
+/*------------ FOOTER -------------*/
+
+footer {
+  max-width: 1680px; /* Максимальная ширина основного контейнера */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  padding: 0px 24px; /* Паддинг по горизонтали 24 пикселя */
+}
+
+.footer-container {
+  display: flex; /* Используем flexbox для выравнивания блоков */
+  flex-direction: column; /* Устанавливаем расположение блоков в столбец */
+  gap: 48px
+}
+
+.footer-block {
+  text-align: center; /* Выравниваем содержимое по центру */
+}
+
+.footer-divider {
+  height: 1px; /* Толщина дивайдера 1 пиксель */
+  background-color: #e2e4f0; /* Цвет дивайдера */
+  margin: 0 auto; /* Центрируем дивайдеры */
+  width: 100%; /* Ширина дивайдеров по размеру блоков */
+}
+
+.footer-block-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-1-left {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+}
+
+.block-1-left-wrapper {
+  display: flex;
+  gap: 48px;
+}
+
+.block-1-left-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.block-1-left-text-up,
+.block-1-right-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.block-1-left-text-down {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.block-1-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.block-1-right-button {
+  height: 48px;
+  padding: 12px 24px;
+  border: 1px solid var(--bg-color);
+  box-shadow: none;
+  border-radius: 8px;
+  background: var(--bg-color);
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.footer-block-2-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 24px;
+}
+
+.footer-block-2-list {
+  list-style-type: none;
+  padding-left: 0; /* Убираем внутренний отступ слева */
+  margin-bottom: 0;
+}
+
+.footer-block-2-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 16px; /* Дополнительный отступ снизу для разделения от следующего блока */
+}
+
+.footer-block-2-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 0; /* Убираем внешний отступ слева у элементов списка */
+  margin-bottom: 16px;
+  text-align: left; /* Выравниваем текст по левому краю */
+}
+
+.footer-block-2-item:last-child {
+  margin-bottom: 0; /* Убираем нижний margin у последнего элемента списка */
+}
+
+.footer-block-bottom-conatiner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-block-line-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.footer-block-line-1-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-block-line-1-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #828EAD;
+}
+
+.blue {
+  color: var(--secondary-color);
+}
+
+.footer-block-line-2-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #828EAD;
+}
+
+.footer-block-line-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.footer-block-line-3-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #8F9BB3;
+
+}

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task Compo</title>
+    <!-- Подключение файла стилей styles.css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Встраивание шрифта Montserrat через Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключаем файл скрипта -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!---------------------- HEADER ---------------------------->
+    <header>
+      <div class="header-section">
+        <div class="header-container">
+          <div class="header-block header-top">
+            <img
+              class="header-top-logo"
+              src="images/Frame 1308.svg"
+              alt="Логотип"
+              width="144px"
+              height="28px"
+            />
+  
+            <div class="header-top-menu-button">
+              <!-- SVG иконка списка -->
+              <img
+                class="header-top-menu-icon"
+                src="images/list.png"
+                alt="Иконка списка"
+                width="24px"
+                height="24px"
+              />
+              <p class="header-top-menu-text">Menu</p>
+            </div>
+  
+            <div class="header-top-input-container">
+              <input type="text" placeholder="Название запроса" />
+              <div class="input-icons">
+                <img src="images/close.png" alt="Close Icon" class="close-icon" />
+                <img
+                  src="images/zoom_glass.png"
+                  alt="Zoom Glass Icon"
+                  class="search-icon"
+                />
+              </div>
+            </div>
+  
+            <div class="notification">
+              <!-- SVG иконка колокольчика -->
+              <img
+                class="icon"
+                src="images/Icon_bell.svg"
+                alt="Иконка колокольчика"
+                width="32"
+                height="32"
+              />
+  
+              <img
+                class="vertical-divider"
+                src="images/Line 80.png"
+                alt="Вертикальный делитель"
+              />
+              <!-- SVG иконка сердечка -->
+              <img
+                class="icon"
+                src="images/Icon_heart.svg"
+                alt="Иконка сердечка"
+                width="32px"
+                height="32px"
+              />
+            </div>
+            <div class="cart-button">
+              <!-- SVG иконка корзины -->
+              <img
+                class="cart-icon"
+                src="images/Icon-cart-blue.svg"
+                alt="Иконка корзины"
+                width="24px"
+                height="24px"
+              />
+              <p id="cartTotalAmount" class="cart-total">144 235₽</p>
+            </div>
+            <div class="user-info">
+              <img
+                class="avatar"
+                src="images/Avatar.png"
+                alt="Avatar"
+                width="32px"
+                height="32px"
+              />
+              <span class="user-name">Ермаков Е.</span>
+              <span class="dropdown-arrow"></span>
+            </div>
+          </div>
+  
+          <div class="header-divider"></div>
+  
+          <div class="header-block header-bottom" >
+            <nav class="nav-left">
+              <ul class="navigation-menu left-part">
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href="#">Шаблоны заказов</a></li>
+                <li><a href="#">Обращения</a></li>
+              </ul>
+            </nav>
+  
+            <nav class="nav-right">
+              <ul class="navigation-menu right-part">
+                <li>
+                  <div class="nav-menu-your-manager">
+                    <img
+                      class="your-manager-icon"
+                      src="images/Icon_your-manager.svg"
+                      alt="Иконка чата"
+                      width="16px"
+                      height="16px"
+                    />
+                    <p class="your-manager-text">Ваш менеджер</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-menu-event">
+                    <img
+                      class="event-icon"
+                      src="images/Icon_procent.svg"
+                      alt="Иконка акции"
+                      width="16px"
+                      height="16px"
+                    />
+                    <p class="your-manager-text">Акции</p>
+                  </div>
+                </li>
+                <li><p class="your-manager-text">Блог</p></li>
+              </ul>
+            </nav>
+          </div>
+          
+          <div class="header-divider"></div>
+
+        </div>
+      </div>
+    </header>
+    <!---------------------- MAIN ---------------------------->
+    <main>
+      <section class="main">
+        <div class="main-container">
+          <div class="container-upper-wrapper">
+            <div class="breadcrumbs">
+              <div class="breadcrumb-item">Каталог</div>
+              <div class="breadcrumb-divider">/</div>
+              <div class="breadcrumb-item">Обувь</div>
+              <div class="breadcrumb-divider">/</div>
+              <div class="breadcrumb-item">Кроссовки</div>
+              <div class="breadcrumb-divider">/</div>
+              <div class="breadcrumb-item">Беговые</div>
+            </div>
+            <h2 class="product-title">Кроссовки мужские Skechers Sunny Dale</h2>
+          </div>
+          <div class="product-info">
+            <div class="product-description">
+              <div class="product-image">
+                <img
+                  class="product-picture"
+                  src="images/boot.png"
+                  alt="Ботинок"
+                  width="400px"
+                  height="400px"
+                />
+                <div class="other-products-images">
+                    <div class="icon-wrapper">
+                        <img
+                          class="icon-arrow"
+                          src="images/Icon-arrow-left.svg"
+                          alt="Стрелка влево"
+                          width="32px"
+                          height="32px"
+                        />
+                    </div>
+                    <div class="icon-boots">
+                        <img
+                          class="icon-boot"
+                          src="images/Boot_1.png"
+                          alt="Кроссовок белый-черный-красный "
+                          width="64px"
+                          height="64px"
+                        />
+                        <img
+                          class="icon-boot"
+                          src="images/Boot_2.png"
+                          alt="Кроссовок коричнево-бежевый "
+                          width="64px"
+                          height="64px"
+                        />
+                        <img
+                          class="icon-boot"
+                          src="images/Boot_3.png"
+                          alt="Кроссовок коричневый высокий "
+                          width="64px"
+                          height="64px"
+                        />
+                        <img
+                          class="icon-boot"
+                          src="images/Boot_4.png"
+                          alt="Кроссовок бежевый высокий "
+                          width="64px"
+                          height="64px"
+                        />
+
+                    </div>
+                    <div class="icon-wrapper">
+                        <img
+                          class="icon-arrow"
+                          src="images/Icon-arrow-right.svg"
+                          alt="Стрелка вправо"
+                          width="32px"
+                          height="32px"
+                        />
+                    </div>
+                </div>
+              </div>
+              <div class="product-details">
+                <div class="product-details-upper">
+                  <div class="product-details-upper-left">
+                    <div class="product-details-upper-left-top">
+                      <div class="left-top-price">
+                        <p class="left-top-price-full">
+                          166 534.00 цена без скидки
+                        </p>
+                        <div class="left-top-price-line">
+                          <h1 class="left-top-price-total">122 566 ₽</h1>
+                          <img
+                            class="icon-dicount"
+                            src="images/Frame_discount_percent.svg"
+                            alt="Процент скидки"
+                          />
+                        </div>
+                      </div>
+                      <div class="left-top-package">
+                        <div class="left-top-package-quantity">
+                          <h6 class="left-top-package-quantity-text">
+                            12 штук в уп.
+                          </h6>
+                        </div>
+                        <div class="left-top-package-in-one">
+                          <img
+                            class="icon-toggle"
+                            src="images/Toggle.svg"
+                            alt="Выключатель"
+                          />
+                          <p class="left-top-package-in-one-text">
+                            Заказ упаковкой
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      class="horizontal-divider"
+                      src="images/Line 81.png"
+                      alt="Горизонтальный делитель"
+                    />
+                    <div class="product-details-upper-left-middle">
+                      <div class="left-middle-block">
+                        <h6 class="left-middle-text-upper">Завтра</h6>
+                        <p class="left-middle-text-down">Доставка</p>
+                      </div>
+                      <div class="left-middle-block">
+                        <h6 class="left-middle-text-upper">7 шт.</h6>
+                        <p class="left-middle-text-down">Тарасовка</p>
+                      </div>
+                      <div class="left-middle-block">
+                        <h6 class="left-middle-text-upper">7 шт.</h6>
+                        <p class="left-middle-text-down">Тарасовка</p>
+                      </div>
+                    </div>
+                    <div class="product-details-upper-left-bottom">
+                      <div id="addToCartButton" class="product-details-upper-left-cart">
+                        <img
+                          class="icon-cart"
+                          src="images/Icon-cart.png"
+                          alt="Корзина"
+                          width="24px"
+                          height="24px"
+                        />
+                        <p class="cart-text">В корзину</p>
+                      </div>
+                      <div class="product-details-upper-left-icon">
+                        <img
+                          class="icon-heart"
+                          src="images/Icon-like.png"
+                          alt="Сердечко лайк"
+                          width="24px"
+                          height="24px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="vertical-divider"
+                    src="images/Line 30.png"
+                    alt="Вертикальный делитель"
+                  />
+
+                  <div class="product-details-upper-right">
+                    <h4 class="upper-right-title">Характеристики</h4>
+                    <div class="upper-right-block-wrapper">
+                      <div class="upper-right-block">
+                        <div class="upper-right-block-item">
+                          <p class="item-code">ELC00696</p>
+                          <p class="item-name">Код поставщика</p>
+                        </div>
+                        <div class="upper-right-block-item">
+                          <p class="item-code">ELC0200000696</p>
+                          <p class="item-name">Артикул</p>
+                        </div>
+                      </div>
+                      <div class="upper-right-block">
+                        <div class="upper-right-block-item">
+                          <p class="item-code">ELC00696</p>
+                          <p class="item-name">Код РАЭК</p>
+                        </div>
+                        <div class="upper-right-block-item">
+                          <p class="item-code">ELC00696</p>
+                          <p class="item-name">Код ЕТМ</p>
+                        </div>
+                      </div>
+                      <div class="upper-right-block">
+                        <div class="upper-right-block-item">
+                          <p class="item-code">Electric used</p>
+                          <p class="item-name">Бренд</p>
+                        </div>
+                        <div class="upper-right-block-item">
+                          <p class="item-code">ELC0200000696</p>
+                          <p class="item-name">Серия</p>
+                        </div>
+                      </div>
+                      <div class="upper-right-block">
+                        <div class="upper-right-block-item">
+                          <p class="item-code">ELC00696</p>
+                          <p class="item-name">Код производителя</p>
+                        </div>
+                        <!-- <div class="upper-right-block-item">
+                                                <p class="item-code">ELC0200000696</p>
+                                                <p class="item-name">Артикул</p>
+                                            </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-details-down">
+                  <h3 class="product-details-title">Описание товара</h3>
+                  <p class="product-details-text">
+                    Создание приверженного покупателя специфицирует
+                    неопровержимый комплексный анализ ситуации. CTR существенно
+                    индуцирует из ряда вон выходящий SWOT-анализ. Воздействие на
+                    потребителя определяет возрастающий интеграл по поверхности,
+                    что известно даже школьникам. Отсюда естественно следует,
+                    что коммуникация уравновешивает косвенный фактор
+                    коммуникации. Поле направлений естественно допускает
+                    экспериментальный скачок функции, таким образом сбылась
+                    мечта идиота - утверждение полностью доказано.
+                    Арифметическая прогрессия притягивает линейно зависимый пул
+                    лояльных изданий.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!---------------------- FOOTER ---------------------------->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-divider"></div>
+        <div class="footer-block">
+          <div class="footer-block-1">
+            <div class="block-1-left">
+              <img
+                class="logo"
+                src="images/Frame 1308.svg"
+                alt="Логотип"
+                width="144px"
+                height="28px"
+              />
+              <div class="block-1-left-wrapper">
+                <div class="block-1-left-block">
+                  <div class="block-1-left-text-up">8 800 841-95-95</div>
+                  <div class="block-1-left-text-down">Служба поддержки</div>
+                </div>
+                <div class="block-1-left-block">
+                  <div class="block-1-left-text-up">support@sport.ru</div>
+                  <div class="block-1-left-text-down">Служба поддержки</div>
+                </div>
+              </div>
+            </div>
+            <div class="block-1-right">
+              <div class="block-1-right-text">Вакансии</div>
+              <div class="block-1-right-text">Блог</div>
+              <div class="block-1-right-text">Акции</div>
+              <button class="block-1-right-button">Предложить идею</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-block">
+          <div class="footer-block-2-container">
+            <div class="footer-block-2-element">
+              <h4 class="footer-block-2-title">Женщинам</h4>
+              <ul class="footer-block-2-list">
+                <li class="footer-block-2-item">Одежда</li>
+                <li class="footer-block-2-item">Обувь</li>
+                <li class="footer-block-2-item">Аксессуары</li>
+                <li class="footer-block-2-item">Белье</li>
+                <li class="footer-block-2-item">Bra fitting</li>
+              </ul>
+            </div>
+            <div class="footer-block-2-element">
+              <h4 class="footer-block-2-title">Мужчинам</h4>
+              <ul class="footer-block-2-list">
+                <li class="footer-block-2-item">Одежда</li>
+                <li class="footer-block-2-item">Обувь</li>
+                <li class="footer-block-2-item">Аксессуары</li>
+                <li class="footer-block-2-item">Белье</li>
+              </ul>
+            </div>
+            <div class="footer-block-2-element">
+              <h4 class="footer-block-2-title">Детям</h4>
+              <ul class="footer-block-2-list">
+                <li class="footer-block-2-item">Одежда</li>
+                <li class="footer-block-2-item">Обувь</li>
+                <li class="footer-block-2-item">Аксессуары</li>
+                <li class="footer-block-2-item">Белье</li>
+                <li class="footer-block-2-item">Игрушки</li>
+                <li class="footer-block-2-item">Малыши</li>
+              </ul>
+            </div>
+            <div class="footer-block-2-element">
+              <h4 class="footer-block-2-title">Виды спорта</h4>
+              <ul class="footer-block-2-list">
+                <li class="footer-block-2-item">Велоспорт</li>
+                <li class="footer-block-2-item">Туризм</li>
+                <li class="footer-block-2-item">Тренажеры и фитнес</li>
+                <li class="footer-block-2-item">Командные виды спорта</li>
+                <li class="footer-block-2-item">Самокаты</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-block bottom-block">
+          <div class="footer-block-bottom-conatiner">
+            <div class="footer-block-line-1">
+              <div class="footer-block-line-1-element">
+                <img
+                  class="footer-block-line-1-logo"
+                  src="images/Icon-list.svg"
+                  alt="Иконка лист бумаги"
+                  width="16px"
+                  height="16px"
+                />
+                <p class="footer-block-line-1-text">PDF презентация</p>
+              </div>
+              <div class="footer-block-line-1-element">
+                <img
+                  class="footer-block-line-1-logo"
+                  src="images/Icon-video.svg"
+                  alt="Иконка видеокамера"
+                  width="16px"
+                  height="16px"
+                />
+                <p class="footer-block-line-1-text">Видео инструкция</p>
+              </div>
+              <div class="footer-block-line-1-element">
+                <img
+                  class="footer-block-line-1-logo"
+                  src="images/Icon-info.svg"
+                  alt="Иконка информации"
+                  width="16px"
+                  height="16px"
+                />
+                <p class="footer-block-line-1-text">FAQ</p>
+              </div>
+              <div class="footer-block-line-1-element">
+                <img
+                  class="footer-block-line-1-logo"
+                  src="images/Icon-YouTube.svg"
+                  alt="Иконка YouTube"
+                  width="16px"
+                  height="16px"
+                />
+                <p class="footer-block-line-1-text blue">Мы на YouTube</p>
+              </div>
+              <div class="footer-block-line-1-element">
+                <p class="footer-block-line-1-text">
+                  Политика конфиденциальности
+                </p>
+              </div>
+              <div class="footer-block-line-1-element">
+                <p class="footer-block-line-1-text">Лицензионное соглашение</p>
+              </div>
+            </div>
+            <div class="footer-block-line-2">
+              <p class="footer-block-line-2-text">
+                Настоящая Политика обработки персональных данных разработана в
+                соответствии с Конституцией Российской Федерации, Трудовым
+                кодексом Российской Федерации, Гражданским кодексом Российской
+                Федерации, Федеральным законом от 27 июля 2006 года 149-ФЗ "Об
+                информации, информационных технологиях и о защите информации",
+              </p>
+            </div>
+            <div class="footer-block-line-3">
+              <img
+                class="footer-block-line-3-logo"
+                src="images/Brand_logo_bottom.svg"
+                alt="Логотип Compo"
+                width="124px"
+                height="24px"
+              />
+              <h6 class="footer-block-line-3-title">Разработка платформы</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
