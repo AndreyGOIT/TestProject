@@ -1,0 +1,15 @@
+/Users/andreyerokhin/Projects/TestProject/bin/Debug/net8.0/TestProject
+/Users/andreyerokhin/Projects/TestProject/bin/Debug/net8.0/TestProject.deps.json
+/Users/andreyerokhin/Projects/TestProject/bin/Debug/net8.0/TestProject.runtimeconfig.json
+/Users/andreyerokhin/Projects/TestProject/bin/Debug/net8.0/TestProject.dll
+/Users/andreyerokhin/Projects/TestProject/bin/Debug/net8.0/TestProject.pdb
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfoInputs.cache
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfo.cs
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/TestProject.csproj.CoreCompileInputs.cache
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/TestProject.sourcelink.json
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/TestProject.dll
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/refint/TestProject.dll
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/TestProject.pdb
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/TestProject.genruntimeconfig.cache
+/Users/andreyerokhin/Projects/TestProject/obj/Debug/net8.0/ref/TestProject.dll
