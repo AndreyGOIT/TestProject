@@ -24,8 +24,8 @@ if ((roll1 == roll2) && (roll2 == roll3))
 if (total  >= 15) {
     Console.WriteLine("You win!");
 }
-
-if (total < 15) {
+else 
+{
     Console.WriteLine("Sorry, you lose.");
 }
 
