@@ -1,0 +1,15 @@
+/Users/andreyerokhin/Documents/CsharpProjects/bin/Debug/net8.0/CsharpProjects
+/Users/andreyerokhin/Documents/CsharpProjects/bin/Debug/net8.0/CsharpProjects.deps.json
+/Users/andreyerokhin/Documents/CsharpProjects/bin/Debug/net8.0/CsharpProjects.runtimeconfig.json
+/Users/andreyerokhin/Documents/CsharpProjects/bin/Debug/net8.0/CsharpProjects.dll
+/Users/andreyerokhin/Documents/CsharpProjects/bin/Debug/net8.0/CsharpProjects.pdb
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/CsharpProjects.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/CsharpProjects.AssemblyInfoInputs.cache
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/CsharpProjects.AssemblyInfo.cs
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/CsharpProjects.csproj.CoreCompileInputs.cache
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/CsharpProjects.sourcelink.json
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/CsharpProjects.dll
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/refint/CsharpProjects.dll
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/CsharpProjects.pdb
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/CsharpProjects.genruntimeconfig.cache
+/Users/andreyerokhin/Documents/CsharpProjects/obj/Debug/net8.0/ref/CsharpProjects.dll
