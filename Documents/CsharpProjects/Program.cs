@@ -1,31 +1,29 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
-
-Random random = new Random();
-int current = random.Next(1, 11);
-int herosHealth = 10;
-int monsterHealth = 10;
-
+#region Code project 1
+int readResult;
+bool validEntry = false;
+Console.WriteLine("Enter an integer value between 5 and 10:");
 do
 {
-    // Hero turn
-    int heroAttack = random.Next(1, 11);
-    monsterHealth -= heroAttack;
-    if (monsterHealth <= 0) {
-        Console.WriteLine("Monster was damaged and lost " + heroAttack + " health and now has " + monsterHealth + " health.");
-        Console.WriteLine("Hero wins!");
-        break;
-    } 
-    // Monster turn
-    int monsterAttack = random.Next(1, 11);
-    herosHealth -= monsterAttack;
-    if (herosHealth <= 0) {
-        Console.WriteLine("Hero was damaged and lost " + monsterAttack + " health and now has " + herosHealth + " health.");
-        Console.WriteLine("Monster wins!");
-        break;
+    string? input = Console.ReadLine();
+    if (int.TryParse(input, out readResult))
+    {
+        if (readResult >= 5 && readResult <= 10)
+        {
+            validEntry = true;
+        }
+        else
+        {
+            Console.WriteLine("Your input is invalid, please try again.");
+        }
     }
-
-    
-} while (herosHealth > 0 && monsterHealth > 0);
-
-Console.WriteLine("Game Over");
+    else
+    {
+        Console.WriteLine("Invalid input. Please enter an integer.");
+    }
+} while (validEntry == false);
+Console.WriteLine($"Your input value ({readResult}) has been accepted.");
+#endregion
+#region Code project 2
+#endregion
