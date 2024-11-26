@@ -1,66 +1,69 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 #region Code project 1
-string? readResult;
-string valueEntered = "";
-int numValue = 0;
-bool validNumber = false;
-
-Console.WriteLine("Enter an integer value between 5 and 10");
-
-do
-{
-    readResult = Console.ReadLine();
-    if (readResult != null) 
-    {
-        valueEntered = readResult;
-    }
-
-    validNumber = int.TryParse(valueEntered, out numValue);
-
-    if (validNumber == true)
-    {
-        if (numValue <= 5 || numValue >= 10)
-        {
-            validNumber = false;
-            Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10.");
-        }
-    }
-    else 
-    {
-        Console.WriteLine("Sorry, you entered an invalid number, please try again");
-    }
-} while (validNumber == false);
-
-Console.WriteLine($"Your input value ({numValue}) has been accepted.");
-
-readResult = Console.ReadLine();
-#endregion
-
-#region Code project 2 - write code that validates string input
 // string? readResult;
-// bool validEntry = false;
-// Console.WriteLine("Enter one of three role names: Administrator, Manager, or User:");
+// string valueEntered = "";
+// int numValue = 0;
+// bool validNumber = false;
+
+// Console.WriteLine("Enter an integer value between 5 and 10");
+
 // do
 // {
 //     readResult = Console.ReadLine();
-//     if (readResult != null)
+//     if (readResult != null) 
 //     {
-//         if (readResult == "Administrator" || readResult == "Manager" || readResult == "User")
+//         valueEntered = readResult;
+//     }
+
+//     validNumber = int.TryParse(valueEntered, out numValue);
+
+//     if (validNumber == true)
+//     {
+//         if (numValue <= 5 || numValue >= 10)
 //         {
-//             validEntry = true;
-//         }
-//         else
-//         {
-//             Console.WriteLine("Your input is invalid, please try again.");
+//             validNumber = false;
+//             Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10.");
 //         }
 //     }
-//     else
+//     else 
 //     {
-//         Console.WriteLine("Invalid input. Please enter one of three role names: Administrator, Manager, or User.");
+//         Console.WriteLine("Sorry, you entered an invalid number, please try again");
 //     }
-// } while (validEntry == false);
-// Console.WriteLine($"Your input value ({readResult}) has been accepted.");
+// } while (validNumber == false);
+
+// Console.WriteLine($"Your input value ({numValue}) has been accepted.");
+
+// readResult = Console.ReadLine();
+#endregion
+
+#region Code project 2 - write code that validates string input
+string? readResult;
+string roleName = "";
+bool validEntry = false;
+
+do
+{                
+    Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+    readResult = Console.ReadLine();
+    if (readResult != null) 
+    {
+        roleName = readResult.Trim();
+    }
+
+    if (roleName.ToLower() == "administrator" || roleName.ToLower() == "manager" || roleName.ToLower() == "user") 
+    {
+        validEntry = true;
+    }
+    else
+    {
+        Console.Write($"The role name that you entered, \"{roleName}\" is not valid. ");
+    }
+
+} while (validEntry == false);
+
+Console.WriteLine($"Your input value ({roleName}) has been accepted.");
+readResult = Console.ReadLine();
 #endregion
 
 #region Code project 3 - write code that validates string input
