@@ -8,11 +8,29 @@
   background-color: #fff;
   transition: transform 0.2s;
 }
+
 .customer-list-title {
   text-align: center;
   margin-top: 20px;
   cursor: pointer;
 }
+
+.pulsing {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .customer-list-subtitle {
   font-style: italic;
   font-size: small;
@@ -43,6 +61,7 @@
 .customer-card-title {
   margin-bottom: 5px;
   color: #2f5b87;
+  cursor: pointer;
 }
 
 .customer-card-label {

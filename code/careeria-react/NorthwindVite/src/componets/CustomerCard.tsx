@@ -12,13 +12,21 @@ const CustomerCard = ({ customer }: CustomerCardProps) => {
   return (
     <>
       <div className="customer-card">
-        <h3
-          onClick={() => setShowDetails(!showDetails)}
-          className="customer-card-title"
-        >
-          {customer.companyName}
-        </h3>
-
+        {!showDetails ? (
+          <h3
+            onClick={() => setShowDetails(!showDetails)}
+            className="customer-card-title"
+          >
+            {customer.companyName}
+          </h3>
+        ) : (
+          <button
+            onClick={() => setShowDetails(!showDetails)}
+            className="customer-card-title clickable"
+          >
+            [ x ] Close
+          </button>
+        )}
         {showDetails && (
           <div key={customer.id} className="customer-card">
             <p>
