@@ -6,7 +6,9 @@ import CustomerList from "./componets/CustomerList.tsx";
 const App = () => {
   return (
     <>
-      <h1 className="title-center">Vite + React</h1>
+      <h1 className="title-center">
+        React + Vite <span className="highlight">/ .NET Core API</span>
+      </h1>
       {/* <Laskuri /> */}
       {/* <Events otsikko={"Coming events"} /> */}
       <CustomerList />
