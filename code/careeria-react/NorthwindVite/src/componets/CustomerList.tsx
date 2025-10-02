@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import CustomerService from "../servives/CustomerService";
+import CustomerService from "../services/CustomerService";
 import type { Customer } from "../types/CustomerType";
 import "../styles/CustomerList.css";
 import CustomerCard from "./CustomerCard";
@@ -10,6 +10,7 @@ const CustomerList = () => {
   const [customers, setCustomers] = useState([]);
   const [show, setShow] = useState(false);
 
+  // Fetch customers on component mount
   useEffect(() => {
     CustomerService.getAll()
       .then((data) => setCustomers(data))

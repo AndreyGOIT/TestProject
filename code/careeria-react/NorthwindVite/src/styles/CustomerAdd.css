@@ -1,3 +1,10 @@
+.customer-add-title {
+  text-align: end;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #2f5b87;
+}
+
 .customer-add-form {
   border: 1px solid #ddd;
   border-radius: 10px;
