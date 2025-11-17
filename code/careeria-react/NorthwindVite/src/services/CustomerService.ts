@@ -1,9 +1,7 @@
-import axios from "axios";
-
-const baseUrl = "http://localhost:5109/api/Customers";
+import api from "./api";
 
 export interface Customer {
-  id: string;
+  customerId: string;
   companyName: string;
   contactName: string;
   contactTitle: string;
@@ -16,13 +14,28 @@ export interface Customer {
   fax: string | null;
 }
 
-const getAll = () => {
-  const requestOptions = axios.get(baseUrl);
-  return requestOptions.then((response) => response.data);
+// Fetch all customers
+const getAll = async () => {
+  const response = await api.get("/Customers");
+  return response.data;
 };
 
-const create = (newCustomer: Customer) => {
-  return axios.post(baseUrl, newCustomer);
+// Create a new customer
+const create = async (newCustomer: Customer) => {
+  const response = await api.post("/Customers", newCustomer);
+  return response.data;
 };
 
-export default { getAll, create };
+// Edit an existing customer
+const update = async (customerId: string, updatedCustomer: Customer) => {
+  const response = await api.put(`/Customers/${customerId}`, updatedCustomer);
+  return response.data;
+};
+
+// Delete a customer by ID
+const remove = async (customerId: string) => {
+  const response = await api.delete(`/Customers/${customerId}`);
+  return response.data;
+};
+
+export default { getAll, create, update, remove };
